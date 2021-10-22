@@ -4,9 +4,10 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-      time: "13:20"
+      time: "14:20"
       timezone: "Asia/Tokyo"
     target-branch: "develop"
+    open-pull-requests-limit: 50
     ignore:
       - dependency-name: "Django"
         # Djangoではメジャー・マイナーバージョンの更新を無視(パッチのみ許可)
@@ -19,9 +20,10 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-      time: "13:20"
+      time: "14:20"
       timezone: "Asia/Tokyo"
     target-branch: "develop"
+    open-pull-requests-limit: 50
     ignore:
       - dependency-name: "python"
         # Pythonではメジャー・マイナーバージョンの更新を無視(パッチのみ許可)
