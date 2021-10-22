@@ -10,8 +10,7 @@ updates:
     ignore:
       - dependency-name: "Django"
         # Djangoではメジャー・マイナーバージョンの更新を無視(パッチのみ許可)
-        update-types:["version-update:semver-major"]
-        # update-types:["version-update:semver-major","version-update:semver-minor"]
+        update-types: ["version-update:semver-major","version-update:semver-minor"]
   # - package-ecosystem: "github-actions"
   #   directory: "/"
   #   schedule:
@@ -26,8 +25,7 @@ updates:
     ignore:
       - dependency-name: "python"
         # Pythonではメジャー・マイナーバージョンの更新を無視(パッチのみ許可)
-        update-types:["version-update:semver-major"]
-        # update-types:["version-update:semver-major","version-update:semver-minor"]
+        update-types: ["version-update:semver-major","version-update:semver-minor"]
   # - package-ecosystem: "docker"
   #   directory: "/.devcontainer"
   #   schedule:
