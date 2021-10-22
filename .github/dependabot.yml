@@ -4,13 +4,13 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-      time: "12:40"
+      time: "13:20"
       timezone: "Asia/Tokyo"
     target-branch: "develop"
     ignore:
       - dependency-name: "Django"
-        # Djangoではバージョン3のマイナーバージョンの更新を無視
-        versions: ["3.x"]
+        # Djangoではメジャー・マイナーバージョンの更新を無視(パッチのみ許可)
+        update-types:["version-update:semver-major","version-update:semver-minor"]
   # - package-ecosystem: "github-actions"
   #   directory: "/"
   #   schedule:
@@ -19,13 +19,13 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-      time: "12:40"
+      time: "13:20"
       timezone: "Asia/Tokyo"
     target-branch: "develop"
     ignore:
       - dependency-name: "python"
-        # pythonではバージョン3のマイナーバージョンの更新を無視
-        versions: ["3.x"]
+        # Pythonではメジャー・マイナーバージョンの更新を無視(パッチのみ許可)
+        update-types:["version-update:semver-major","version-update:semver-minor"]
   # - package-ecosystem: "docker"
   #   directory: "/.devcontainer"
   #   schedule:
