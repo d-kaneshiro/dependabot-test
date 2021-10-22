@@ -4,6 +4,9 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+      time: "12:40"
+      timezone: "Asia/Tokyo"
+    target-branch: "develop"
     ignore:
       - dependency-name: "Django"
         # Djangoではバージョン3のマイナーバージョンの更新を無視
@@ -16,6 +19,9 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+      time: "12:40"
+      timezone: "Asia/Tokyo"
+    target-branch: "develop"
     ignore:
       - dependency-name: "python"
         # pythonではバージョン3のマイナーバージョンの更新を無視
