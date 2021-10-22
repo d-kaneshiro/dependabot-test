@@ -1,0 +1,24 @@
+# lint
+pycodestyle==2.7.0
+autopep8==1.5.7
+flake8==3.9.2
+flake8-docstrings==1.6.0
+flake8-quotes==3.3.0
+
+# test
+pytest==6.2.5
+pytest-cov==2.12.1
+pytest-django==4.4.0
+parameterized==0.8.1
+moto==2.2.6
+boto3==1.18.40
+
+# refactor
+rope==0.19.0
+
+# stubs
+django-stubs==1.9.0
+djangorestframework-stubs==1.4.0
+
+# docs
+graphviz==0.17

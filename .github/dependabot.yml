@@ -1,0 +1,33 @@
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "12:40"
+      timezone: "Asia/Tokyo"
+    target-branch: "develop"
+    ignore:
+      - dependency-name: "Django"
+        # Djangoではバージョン3のマイナーバージョンの更新を無視
+        versions: ["3.x"]
+  # - package-ecosystem: "github-actions"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "monthly"
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "12:40"
+      timezone: "Asia/Tokyo"
+    target-branch: "develop"
+    ignore:
+      - dependency-name: "python"
+        # pythonではバージョン3のマイナーバージョンの更新を無視
+        versions: ["3.x"]
+  # - package-ecosystem: "docker"
+  #   directory: "/.devcontainer"
+  #   schedule:
+  #     interval: "monthly"
+  
