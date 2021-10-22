@@ -3,7 +3,7 @@ Django==3.2.7
 djangorestframework==3.12.4
 djangorestframework-simplejwt==4.8.0
 django-modelsdoc==0.1.11
-django-environ==0.7.0
+django-environ==0.8.1
 django-extensions==3.1.3
 django-filter==2.4.0
 django-request-logging==0.7.3
