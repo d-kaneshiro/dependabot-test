@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Tokyo
 RUN echo $TZ > /etc/timezone
 
-ARG WORKDIR=/marcelo-api
+ARG WORKDIR=/test
 WORKDIR ${WORKDIR}
 
 # Or your actual UID, GID on Linux if not the default 1000
