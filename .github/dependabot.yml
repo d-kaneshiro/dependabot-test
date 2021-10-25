@@ -26,3 +26,10 @@ updates:
       - dependency-name: "python"
         # Pythonではメジャー・マイナーバージョンの更新を無視(パッチのみ許可)
         versions: ["~>3.10.0"]
+  - package-ecosystem: "docker"
+    directory: "/.devcontainer/postgresql/"
+    schedule:
+      interval: "daily"
+      timezone: "Asia/Tokyo"
+    target-branch: "develop"
+    open-pull-requests-limit: 50
