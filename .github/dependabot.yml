@@ -24,10 +24,10 @@ updates:
       timezone: "Asia/Tokyo"
     target-branch: "develop"
     open-pull-requests-limit: 50
-    ignore:
-      - dependency-name: "python"
-        # Pythonではメジャー・マイナーバージョンの更新を無視(パッチのみ許可)
-        update-types: ["version-update:semver-major","version-update:semver-minor"]
+    # ignore:
+    #   - dependency-name: "python"
+    #     # Pythonではメジャー・マイナーバージョンの更新を無視(パッチのみ許可)
+    #     update-types: ["version-update:semver-major","version-update:semver-minor"]
   # - package-ecosystem: "docker"
   #   directory: "/.devcontainer"
   #   schedule:
