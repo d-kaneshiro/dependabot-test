@@ -13,7 +13,7 @@ RUN rm -rf /var/lib/apt/lists/* \
 ENV http_proxy=$proxy_server
 ENV https_proxy=$proxy_server
 
-ARG WORKDIR=/marcelo-api
+ARG WORKDIR=/test
 WORKDIR ${WORKDIR}
 
 COPY . .
