@@ -4,32 +4,25 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-      time: "13:10"
       timezone: "Asia/Tokyo"
     target-branch: "develop"
     open-pull-requests-limit: 50
     ignore:
       - dependency-name: "Django"
         # Djangoではメジャー・マイナーバージョンの更新を無視(パッチのみ許可)
-        update-types: ["version-update:semver-major","version-update:semver-minor"]
-  # - package-ecosystem: "github-actions"
-  #   directory: "/"
-  #   schedule:
-  #     interval: "monthly"
+        versions: ["~>3.3.0"]
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
       interval: "daily"
-      time: "13:10"
       timezone: "Asia/Tokyo"
     target-branch: "develop"
     open-pull-requests-limit: 50
-    # ignore:
-    #   - dependency-name: "python"
-    #     # Pythonではメジャー・マイナーバージョンの更新を無視(パッチのみ許可)
-    #     update-types: ["version-update:semver-major","version-update:semver-minor"]
-  # - package-ecosystem: "docker"
-  #   directory: "/.devcontainer"
-  #   schedule:
-  #     interval: "monthly"
-  
+    ignore:
+      - dependency-name: "python"
+        # Pythonではメジャー・マイナーバージョンの更新を無視(パッチのみ許可)
+        versions: ["~>3.10.0"]
