@@ -21,4 +21,4 @@ django-stubs==1.9.0
 djangorestframework-stubs==1.4.0
 
 # docs
-graphviz==0.17
+graphviz==0.18.1
