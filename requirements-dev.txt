@@ -8,7 +8,7 @@ flake8-quotes==3.3.0
 # test
 pytest==6.2.5
 pytest-cov==2.12.1
-pytest-django==4.4.0
+pytest-django==4.5.2
 parameterized==0.8.1
 moto==2.2.6
 boto3==1.18.40
