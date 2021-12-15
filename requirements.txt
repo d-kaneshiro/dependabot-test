@@ -1,6 +1,6 @@
 # Django
 Django==3.2.8
-djangorestframework==3.12.4
+djangorestframework==3.13.1
 djangorestframework-simplejwt==4.8.0
 django-modelsdoc==0.1.11
 django-environ==0.7.0
