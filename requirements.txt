@@ -24,4 +24,4 @@ tenacity==6.3.1
 PyJWT==2.1.0
 
 # check db connection script
-python-dotenv==0.19.0
+python-dotenv==0.20.0
