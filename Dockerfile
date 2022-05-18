@@ -1,6 +1,6 @@
 # ARG PYTHON_VERSION=3.9.1
 # FROM python:${PYTHON_VERSION}-buster
-FROM python:3.9.7-buster
+FROM python:3.9.13-buster
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Tokyo
